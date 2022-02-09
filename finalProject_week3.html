@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calathea House Plant</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+      body {
+        background: #905858;
+        color: #f7ffbd;
+        font-family: "Merriweather", serif;
+        margin: 35px auto;
+        text-align: center;
+      }
+      h1,
+      h2 {
+        font-family: "Amatic SC", cursive;
+        line-height: 62px;
+      }
+      h1 {
+        font-weight: bolder;
+        margin: 25px 0 0;
+        font-size: 40px;
+      }
+      h2 {
+        font-weight: bold;
+        margin: 0 auto;
+        font-size: 32px;
+      }
+      img {
+        border: 0;
+        border-radius: 10%;
+        width: 15%;
+        margin: 20px 0;
+      }
+      p {
+        margin: 0 auto;
+        color: #f7ffbd;
+        font-size: 16px;
+        font-weight: lighter;
+      }
+      hr {
+        margin: 15px 250px;
+      }
+      div {
+        text-align: center;
+        padding: 5px 300px;
+        display: inline-block;
+        line-height: 25px;
+      }
+      a {
+        text-decoration: none;
+        color: #f7ffbd;
+        transition: color 150ms;
+        cursor: pointer;
+      }
+      a:hover {
+        color: #b5e0ba;
+      }
+      button {
+        background: radial-gradient(
+          circle,
+          rgba(144, 88, 88, 1) 0%,
+          rgba(93, 58, 58, 1) 100%
+        );
+        border-radius: 30px;
+        box-shadow: 3px 5px 20px #5d3a3a;
+        cursor: pointer;
+        color: #b5e0ba;
+        font-family: "Amatic SC", cursive;
+        font-size: 26px;
+        transition: ease-in-out 300ms;
+        border: 5px solid #f7ffbd;
+        padding: 20px;
+        margin: 25px 0 15px;
+      }
+      button:hover {
+        background: radial-gradient(
+          circle,
+          rgba(64, 181, 78, 1) 0%,
+          rgba(181, 224, 186, 1) 100%
+        );
+        color: #f7ffbd;
+        box-shadow: inset 6.5em 0 0 0 var(--hover);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Calathea</h1>
+    <h2>how to take care of your house plant</h2>
+    <hr />
+    <a href="https://lunapic.com"
+      ><img src="https://i.imgur.com/zZ4MLSD.gif"
+    /></a>
+    <hr />
+    <div class="grow-plant">
+      <p>
+        <strong>Calatheas</strong> need specific care in order to thrive. They
+        need a consistently warm spot and bright but indirect light – keep them
+        out of direct sunshine. Keep the soil moist from spring to autumn, and
+        provide some humidity by misting the leaves daily or standing on a tray
+        of moist pebbles. Calatheas need to be watered with filtered or
+        distilled water, or rainwater – not tap water.
+      </p>
+    </div>
+    <br />
+    <div class="taking-care">
+      <p>
+        Keep the soil evenly moist (but not soaking wet) at all times from
+        spring to autumn – watering little but often is ideal. Use distilled
+        water, filtered water or rainwater as calatheas are sensitive to the
+        chemicals in tap water. Make sure any excess water has drained away.
+        Water less in winter, keeping the soil just moist. Calatheas do best in
+        a humid environment, so mist the leaves daily with tepid water or stand
+        on a tray of gravel or pebbles that is topped up with water. Feed your
+        calathea every couple of months with a balanced fertiliser. Wipe the
+        leaves occasionally to remove dust.
+        <span class="varieties-plant"
+          ><a
+            href="https://www.gardenersworld.com/how-to/grow-plants/how-to-grow-calathea/"
+            target="_blank"
+            ><em>More varieties...</em></a
+          ></span
+        >
+      </p>
+    </div>
+    <hr />
+    <button class="newsletter">Sign for our newsletter</button>
+
+    <script>
+      function emailList() {
+        let name = prompt("Hello, what is your name?");
+        name = name.trim();
+        let email = prompt("Also, can I get your email?");
+        let newsletter = document.querySelector(".newsletter");
+        console.log("email value: ", email);
+
+        if (email === "" || email === undefined) {
+          alert("Sorry " + name + ". We didn't catch your email, try again");
+        } else {
+          newsletter.innerHTML = "Thank you for joining us, " + name + "!";
+        }
+      }
+
+      let joinUs = document.querySelector(".newsletter");
+      joinUs.addEventListener("click", emailList);
+    </script>
+  </body>
+</html>
